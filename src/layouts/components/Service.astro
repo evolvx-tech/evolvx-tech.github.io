@@ -9,7 +9,6 @@ const { homepage_tab, our_service } = service;
 
 <section class="section services">
   <div class="container">
-    <HomepageTab client:load homepage_tab={homepage_tab} />
     {
       our_service.map((item: any, index: number) => (
         <div class="gx-5 row mt-12 items-center lg:mt-0">
@@ -32,18 +31,7 @@ const { homepage_tab, our_service } = service;
                 />
               </div>
             )}
-            {item.video && (
-              <VideoComponent
-                client:load
-                src={item.video.thumbnail}
-                height={370}
-                width={700}
-                title={item.title}
-                video_id={item.video.video_id}
-                video_width="w-[700px]"
-                video_height="h-[370px]"
-              />
-            )}
+          
           </div>
           <div
             class={`mt-6 lg:col-5 lg:mt-0 ${
@@ -53,11 +41,11 @@ const { homepage_tab, our_service } = service;
             <div class="text-container">
               <h2 class="lg:text-4xl">{item.title}</h2>
               <p class="mt-4">{item.description}</p>
-              {item.button && item.button.enable && (
+              {/* {item.button && item.button.enable && (
                 <a class="btn btn-white mt-6" href={item.button.link}>
                   {item.button.label}
                 </a>
-              )}
+              )} */}
               <ul class="mt-6 text-dark lg:-ml-4">
                 {item.list &&
                   item.list.map((list: any) => (

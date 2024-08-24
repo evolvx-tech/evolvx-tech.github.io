@@ -5,16 +5,8 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Features",
-      "url": "/features"
-    },
-    {
-      "name": "How It Works",
-      "url": "/how-it-works"
+      "name": "Products",
+      "url": "/products"
     },
     {
       "name": "Contact",
@@ -32,12 +24,8 @@
       "url": "/contact"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Products",
+      "url": "/products"
     }
   ]
 }
