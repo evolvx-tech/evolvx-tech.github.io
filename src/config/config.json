@@ -1,8 +1,8 @@
 {
   "site": {
     "title": "EvolvX",
-    "base_url": "https://evolvx.github.io",
-    "base_path": "/evolvx.github.io",
+    "base_url": "https://evolvx-tech.github.io",
+    "base_path": "/evolvx-tech.github.io",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
