@@ -2,7 +2,7 @@
   "site": {
     "title": "EvolvX",
     "base_url": "https://evolvx.github.io",
-    "base_path": "/",
+    "base_path": "/evolvx.github.io",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
