@@ -4,7 +4,7 @@ banner:
   content: "At Evolvx, we specialize in providing top-tier industrial fasteners and custom label solutions designed to meet the rigorous demands of your industry. With a commitment to precision and quality, our extensive range of fasteners ensures secure and reliable performance for all your applications, while our bespoke label services offer clear, durable, and compliant labeling for every need. Whether you're looking for high-strength fasteners or tailored labels to enhance your product’s identity, we have the expertise and solutions to help your business thrive. Trust us to deliver excellence and innovation, every time."
   image: /images/banner-img.png
   button:
-    label: Download The Theme
+    label: Download Brochure
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
     enable: true
 
