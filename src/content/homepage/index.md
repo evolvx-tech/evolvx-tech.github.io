@@ -10,7 +10,7 @@ banner:
 
 ##key features
 key_features:
-  title: "The Highlighting Part Of Our Solution"
+  title: "Products Offered"
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
   feature_list:
     - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
