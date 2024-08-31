@@ -5,8 +5,8 @@
       "url": "/"
     },
     {
-      "name": "Products",
-      "url": "/products"
+      "name": "Labels",
+      "url": "/features"
     },
     {
       "name": "Contact",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Products",
-      "url": "/products"
+      "url": "/features"
     }
   ]
 }

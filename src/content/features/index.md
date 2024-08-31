@@ -1,38 +1,34 @@
 ---
-title: Features
+title: Labels
 banner:
-  title: Connects with all your other tools to create a smooth experience.
-  content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.
+  title: Industrial Label printing
+  content: With the very latest in engraving technology, our machines are the fastest and most accurate available in todays market. This means we can engrave an enormous range of plastics, timbers and rubbers. In particular, we specialise in providing solutions for individuals and businesses requiring labels made from traffolyte, such as Control Panel Labels, Switchboard Labels, Machine Labels and a variety of safety labels and signs.
   image: "/images/features-banner-img.png"
   button:
     label: Download The Theme
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
-    enable: true
+    enable: false
 project_management:
-  title: Build collaborative workspaces <br /> for your team
-  content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. <br /> Mauris pellentesque nec, egestas non nisi. Cras ultricies .
-
+  title: All types of industrial labels delivered to your doorstep
+  content:
   management:
     title: Project Management
     projects:
-      - title: Reduce friction
-        content: Encourage frequent & timely recognition integrating with communication tools
-        icon: lock  #icon package react-feather-icon [https://feathericons.com/]
-      - title: Reduce friction
-        content: Encourage frequent & timely recognition integrating with communication tools
-        icon: tv  #icon package react-feather-icon [https://feathericons.com/]
-      - title: Reduce friction
-        content: Encourage frequent & timely recognition integrating with communication tools
-        icon: tool  #icon package react-feather-icon [https://feathericons.com/]
-      - title: Reduce friction
-        content: Encourage frequent & timely recognition integrating with communication tools
-        icon: lock  #icon package react-feather-icon [https://feathericons.com/]
-      - title: Reduce friction
-        content: Encourage frequent & timely recognition integrating with communication tools
-        icon: tv  #icon package react-feather-icon [https://feathericons.com/]
-      - title: Reduce friction
-        content: Encourage frequent & timely recognition integrating with communication tools
-        icon: tool  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Traffolyte Labels
+        content: 
+        icon: slash  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Control Panel Labels
+        content: 
+        icon: cpu  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Machine Labels
+        content: 
+        icon: package  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Switchboard Labels
+        content: 
+        icon: activity  #icon package react-feather-icon [https://feathericons.com/]
+      - title: Identification
+        content: 
+        icon: heart  #icon package react-feather-icon [https://feathericons.com/]
   feature_service:
     title: Accept payments from devices any country in this universe
     description: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
@@ -44,21 +40,21 @@ project_management:
     buttons:
       - label: Download The Theme
         link: "https://themefisher.com/astro-themes/pinwheel-astro"
-        enable: true
+        enable: false
       - label: Learn More
         link: "#"
-        outline: true
-        enable: true
+        outline: false
+        enable: false
   feature_tab:
     title: Payment gateway for every stage <br /> of your business growth
     list:
-      - title: Transaction from Anyone with <br /> a world to Anywhere
-        content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
+      - title: Switchboard Labels
+        content: 
         image: "/images/features/feature-img-2.png"
-      - title: Integrate Checkout with Process Smoothly
-        content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
+      - title: Machine Labels
+        content: 
         image: "/images/features/feature-img-1.png"
-      - title: Transaction from Anyone with <br /> a world to Anywhere
-        content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-        image: "/images/features/feature-img-2.png"
+      - title: Identification
+        content: 
+        image: "/images/features/feature-img-3.png"
 ---
