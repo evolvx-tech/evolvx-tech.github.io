@@ -14,10 +14,10 @@ key_features:
   description:
   feature_list:
     - icon: "tag"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Industrial Labels
+      title: Labels
       content: Custom Industrial Label Printing - Precision, Durability, and Compliance for Every Application
     - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Anchor Fasteners
+      title: Fasteners
       content: Anchor Fasteners - Strength and Reliability for Secure, Long-Lasting Connections
 
 # service
