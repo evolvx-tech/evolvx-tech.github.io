@@ -46,7 +46,7 @@ project_management:
         outline: false
         enable: false
   feature_tab:
-    title: Payment gateway for every stage <br /> of your business growth
+    title: Labels for every aspect of your business
     list:
       - title: Switchboard Labels
         content: 
