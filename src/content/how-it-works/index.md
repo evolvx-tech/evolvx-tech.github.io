@@ -29,5 +29,4 @@ our_works:
     list:
       - high-grade materials
       - long-lasting performance
-      - Customer Service with 79 languages
 ---
