@@ -7,7 +7,7 @@ page_title:
 perfomance:
   - title: Exceptional Quality
     description:
-    image: "/images/how-it-work/results.png"
+    image: "/images/how-it-work/quality.png"
   - title: Efficient
     description:
     image: "/images/how-it-work/market-professionals.png"
