@@ -12,10 +12,6 @@
 
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
       "name": "Labels",
       "url": "/labels"
     }
