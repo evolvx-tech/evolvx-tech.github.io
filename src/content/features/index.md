@@ -14,10 +14,10 @@ project_management:
   management:
     title: Project Management
     projects:
-      - title: Traffolyte Labels
-        content: 
+      - title: Custom Asset Labels and Stickers
+        content: Asset Tags are essential for protecting and efficiently tracking your valuable assets. Our Asset Labels come equipped with scannable barcodes, QR codes, and serial numbers, making it easy to identify and monitor items in real-time. Whether for inventory management, security, or operational efficiency, our customizable tags ensure quick and accurate tracking, reducing loss and improving asset management. 
         icon: slash  #icon package react-feather-icon [https://feathericons.com/]
-      - title: Control Panel Labels
+      - title: Electrical and Datacom ID
         content: 
         icon: cpu  #icon package react-feather-icon [https://feathericons.com/]
       - title: Machine Labels
@@ -46,15 +46,24 @@ project_management:
         outline: false
         enable: false
   feature_tab:
-    title: Labels for every aspect of your business
+    title: Types of Labels
     list:
-      - title: Switchboard Labels
+      - title: Flags
         content: 
         image: "/images/features/feature-img-2.png"
-      - title: Machine Labels
+      - title: Tags
         content: 
         image: "/images/features/feature-img-1.png"
-      - title: Identification
+      - title: Self Laminating
+        content: 
+        image: "/images/features/feature-img-3.png"
+      - title: Sleeves
+        content: 
+        image: "/images/features/feature-img-3.png"
+      - title: Wrap Around
+        content: 
+        image: "/images/features/feature-img-3.png"
+      - title: Raised Panels
         content: 
         image: "/images/features/feature-img-3.png"
 ---
