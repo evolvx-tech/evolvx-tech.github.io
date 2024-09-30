@@ -21,8 +21,8 @@
     "title": "Helping you grow through manufacturing excellence",
     "description": "",
     "button": {
-      "label": "Download Brochure",
-      "link": "https://test.com"
+      "label": "Products",
+      "link": "/labels"
     }
   },
 
