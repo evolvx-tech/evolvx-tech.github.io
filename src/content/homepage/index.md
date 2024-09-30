@@ -2,11 +2,11 @@
 banner:
   title: "Scale operations with EvolvX"
   content: "At Evolvx, we specialize in providing top-tier industrial fasteners and custom label solutions designed to meet the rigorous demands of your industry. With a commitment to precision and quality, our extensive range of fasteners ensures secure and reliable performance for all your applications, while our bespoke label services offer clear, durable, and compliant labeling for every need. Whether you're looking for high-strength fasteners or tailored labels to enhance your product’s identity, we have the expertise and solutions to help your business thrive. Trust us to deliver excellence and innovation, every time."
-  image: /images/banner-img.png
+  image: /images/banner.png
   button:
     label: Download Brochure
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
-    enable: true
+    enable: false
 
 ##key features
 key_features:
@@ -16,9 +16,10 @@ key_features:
     - icon: "tag"  #icon package react-feather-icon [https://feathericons.com/]
       title: Labels
       content: Custom Industrial Label Printing - Precision, Durability, and Compliance for Every Application
-    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Fasteners
-      content: Anchor Fasteners - Strength and Reliability for Secure, Long-Lasting Connections
+      url: "/labels"
+    # - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+    #   title: Fasteners
+    #   content: Anchor Fasteners - Strength and Reliability for Secure, Long-Lasting Connections
 
 # service
 service:
@@ -36,23 +37,23 @@ service:
           icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
           image: "/images/sells-by-country.png"
 
-  our_service:
-    - title: Accept payments any country in this whole universe
-      desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-      image: "/images/collaboration.png"
-      list:
-        - Supporting more than 119 country world
-        - Open transaction with more than currencies
-        - Customer Service with 79 languages
-    - title: 
-      description:
-      video:
-        thumbnail: "/images/intro-thumbnail.png"
-        video_id: ""
-      button:
-        label: Contact Us
-        link: "#"
-        enable: true
+  # our_service:
+  #   - title: Accept payments any country in this whole universe
+  #     desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
+  #     image: "/images/collaboration.png"
+  #     list:
+  #       - Supporting more than 119 country world
+  #       - Open transaction with more than currencies
+  #       - Customer Service with 79 languages
+  #   - title: 
+  #     description:
+  #     video:
+  #       thumbnail: "/images/intro-thumbnail.png"
+  #       video_id: ""
+  #     button:
+  #       label: Contact Us
+  #       link: "#"
+  #       enable: true
 
 #testimonial
 # testimonial:
