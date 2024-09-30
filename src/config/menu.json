@@ -7,10 +7,6 @@
     {
       "name": "Labels",
       "url": "/labels"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     }
   ],
 
@@ -20,11 +16,7 @@
       "url": "/about"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
-      "name": "Products",
+      "name": "Labels",
       "url": "/labels"
     }
   ]
