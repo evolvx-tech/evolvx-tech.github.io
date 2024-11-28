@@ -1,41 +1,80 @@
 ---
-import PageHeader from "@/components/PageHeader.astro";
-import Shape from "@/components/Shape.astro";
-import Base from "@/layouts/Base.astro";
-import Faq from "@/layouts/function-components/Faq.jsx";
-import PricingCard from "@/layouts/function-components/PricingCard.jsx";
-import { getEntryBySlug } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/pricing.astro";
 
-const pricing = await getEntryBySlug("pricing", "index");
-const page_data = {
-  ...pricing.data,
-  content: pricing.body,
-};
+const pricing = [
+  {
+    name: "Personal",
+    price: "Free",
+    popular: false,
+    features: [
+      "Lifetime free",
+      "Up to 3 users",
+      "Unlimited Pages",
+      "Astro Sub domain",
+      "Basic Integrations",
+      "Community Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Startup",
+    price: {
+      monthly: "$19",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      "All Free Features",
+      "Up to 20 users",
+      "20 Custom domains",
+      "Unlimited Collaborators",
+      "Advanced Integrations",
+      "Priority Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "#",
+    },
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    popular: false,
+    features: [
+      "All Pro Features",
+      "Unlimited Custom domains",
+      "99.99% Uptime SLA",
+      "SAML & SSO Integration",
+      "Dedicated Account Manager",
+      "24/7 Phone Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
 ---
 
-<Base
-  title={pricing.data.title}
-  meta_title={pricing.data.meta_title}
-  description={pricing.data.description}
-  image={pricing.data.image}
->
-  <Shape />
-  <section class="page-hero pb-14 pt-16">
-    <div class="container">
-      <PageHeader page_data={page_data} />
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
-  </section>
-  <!-- pricing -->
-  <section class="section mt-12 pt-0">
-    <div class="container">
-      <div class="row lg:px-10">
-        {
-          pricing.data.pricing_card.map((item: any, i: number) => (
-            <PricingCard item={item} client:load />
-          ))
-        }
-      </div>
-    </div>
-  </section>
-  <Faq client:load data={pricing.data} />
-</Base>
+  </Container>
+</Layout>

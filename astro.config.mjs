@@ -1,60 +1,21 @@
-import mdx from "@astrojs/mdx";
-import react from "@astrojs/react";
-import sitemap from "@astrojs/sitemap";
+import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import AutoImport from "astro-auto-import";
-import { defineConfig, squooshImageService } from "astro/config";
-import remarkCollapse from "remark-collapse";
-import remarkToc from "remark-toc";
-import config from "./src/config/config.json";
+import sitemap from "@astrojs/sitemap";
+import icon from "astro-icon";
+import partytown from "@astrojs/partytown";
 
+// import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
-  site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
-  base: config.site.base_path ? config.site.base_path : "/",
-  trailingSlash: config.site.trailing_slash ? "always" : "never",
-  image: {
-    service: squooshImageService(),
-  },
+  site: "https://www.evolvx.com.au/",
   integrations: [
-    react(),
+    tailwind(),
     sitemap(),
-    tailwind({
+    icon(),
+    partytown({
       config: {
-        applyBaseStyles: false,
-      },
-    }),
-    AutoImport({
-      imports: [
-        "@/shortcodes/Button",
-        "@/shortcodes/Accordion",
-        "@/shortcodes/Notice",
-        "@/shortcodes/Video",
-        "@/shortcodes/Youtube",
-        "@/shortcodes/Blockquote",
-        "@/shortcodes/Badge",
-        "@/shortcodes/ContentBlock",
-        "@/shortcodes/Changelog",
-        "@/shortcodes/Tab",
-        "@/shortcodes/Tabs",
-      ],
-    }),
-    mdx(),
-  ],
-  markdown: {
-    remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
-    ],
-    shikiConfig: {
-      theme: "one-dark-pro",
-      wrap: true,
-    },
-    extendDefaultPlugins: true,
-  },
+        forward: ["dataLayer.push"]
+      }
+    })
+  ]
 });

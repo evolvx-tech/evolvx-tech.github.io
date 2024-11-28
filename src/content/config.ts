@@ -1,35 +1,39 @@
-import { defineCollection, z } from "astro:content";
+// 1. Import utilities from `astro:content`
+import { z, defineCollection } from "astro:content";
 
-// Blog collection schema
+// 2. Define your collection(s)
 const blogCollection = defineCollection({
   schema: z.object({
-    id: z.string().optional(),
+    draft: z.boolean(),
     title: z.string(),
-    subtitle: z.string().optional(),
-    date: z.date().optional(),
-    image: z.string().optional(),
-    author: z.string().optional(),
-    categories: z.array(z.string()).default(["others"]),
-    draft: z.boolean().optional(),
-    featured: z.boolean().optional(),
-  }),
+    snippet: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string()
+    }),
+    publishDate: z.string().transform((str) => new Date(str)),
+    author: z.string().default("EvolvX"),
+    category: z.string(),
+    tags: z.array(z.string())
+  })
 });
 
-// Pages collection schema
-const pagesCollection = defineCollection({
+const teamCollection = defineCollection({
   schema: z.object({
-    id: z.string().optional(),
+    draft: z.boolean(),
+    name: z.string(),
     title: z.string(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    image: z.string().optional(),
-    layout: z.string().optional(),
-    draft: z.boolean().optional(),
-  }),
+    avatar: z.object({
+      src: z.string(),
+      alt: z.string()
+    }),
+    publishDate: z.string().transform((str) => new Date(str))
+  })
 });
 
-// Export collections
+// 3. Export a single `collections` object to register your collection(s)
+//    This key should match your collection directory name in "src/content"
 export const collections = {
   blog: blogCollection,
-  pages: pagesCollection,
+  team: teamCollection
 };

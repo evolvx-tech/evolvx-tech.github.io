@@ -1,25 +1,42 @@
 ---
-import Base from "@/layouts/Base.astro";
-import Banner from "@/layouts/components/Banner.astro";
-import KeyFeatures from "@/layouts/components/KeyFeatures.astro";
-import Testimonial from "@/layouts/components/Testimonial.astro";
-import Service from "@/layouts/components/Service.astro";
-import Cta from "@/layouts/partials/Cta.astro";
-import { getEntryBySlug } from "astro:content";
+import Container from "@components/container.astro";
 
-const homepage = await getEntryBySlug("homepage", "index");
-const { banner, key_features, service, testimonial } = homepage.data;
+import Ats from "@components/ats.astro";
+import Hero from "@components/hero.astro";
+import MySlider from "@components/slider.astro";
+import Layout from "@layouts/Layout.astro";
+import ProductList from "@components/productlist.astro";
+import Whyus from "@components/whyus.astro";
+import Clients from "@components/clients.astro";
+import Blogs from "@components/blogs.astro";
 ---
 
-<Base>
-  <!-- banner -->
-  <Banner banner={banner} />
-  <!-- key features -->
-  <KeyFeatures key_features={key_features} />
-  <!-- service -->
-  <!-- <Service service={service} /> -->
-  <!-- testimonial -->
-  <!-- <Testimonial testimonial={testimonial} /> -->
-  <!-- call to action -->
-  <!-- <Cta /> -->
-</Base>
+<Layout title="">
+  <Container>
+    <Hero />
+
+    <Ats />
+    <Whyus />
+    <ProductList />
+    <!-- <Clients /> -->
+
+    <!-- REAL CLIENTS REAL COMMENTS -- Section-->
+    <!-- <MySlider /> -->
+    <Blogs />
+  </Container>
+</Layout>
+
+<style>
+  .about-us {
+    height: 200px;
+  }
+  @media screen and (max-width: 800px) {
+    #whyus {
+      display: block;
+    }
+
+    .about-us {
+      height: 200px;
+    }
+  }
+</style>

@@ -1,98 +1,63 @@
 ---
-import PageHeader from "@/components/PageHeader.astro";
-import config from "@/config/config.json";
-import Base from "@/layouts/Base.astro";
-import { Image } from "astro:assets";
-import { getEntryBySlug } from "astro:content";
-
-const entry = await getEntryBySlug("contact", "index");
-const { contact_form_action } = config.params;
-const contact = entry.data;
-const page_data = {
-  ...contact,
-  content: contact.body,
-};
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
-<Base
-  title={contact.title}
-  meta_title={contact.meta_title}
-  description={contact.description}
-  image={contact.image}
->
-  <section class="page-hero pb-6 pt-16">
-    <div class="container"><PageHeader page_data={page_data} /></div>
-  </section>
+<Layout title="Contact Us">
+  <Container>
+    <section
+      class="page-heading"
+      style="background-image: linear-gradient(to right, rgba(0, 182, 240, 0.8) 30%, rgba(0, 182, 240, 0.95) 100%), url(/img/bg-heading-contact.webp); background-position: bottom;"
+    >
+      <h1 class="text-4xl lg:text-5xl font-bold text-white">Contact Us</h1>
+    </section>
 
-  <section class="section pt-0">
-    <div class="container">
-      <div class="row">
-        <div class="mb-10 text-center md:col-6 md:order-2 md:mb-0 md:pt-9">
-          <div class="contact-img relative inline-flex pb-5 pl-5">
-            <Image
-              src="/images/contact-img.png"
-              height={544}
-              width={500}
-              alt=""
-            />
-            <Image
-              class="absolute bottom-0 left-0 -z-[1] h-14 w-14"
-              src="/images/shape-2.png"
-              alt=""
-              height={56}
-              width={56}
-            />
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 px-4">
+      <div>
+        <div>
+          <h2 class="font-bold text-2xl text-gray-800 mb-4">
+            Contact <span class="name-hl">EvolvX</span>
+          </h2>
+          <p class="text-md text-justify text-slate-500 mb-3">
+            At EvolvX, we understand the importance of delivering high-quality,
+            tailored labels quickly and affordably.
+          </p>
+          <p class="text-md text-justify text-slate-500 mb-3">
+            Whether you need samples or want to discuss your specific
+            requirements, fill out the form on this page. Our team will respond
+            promptly to assist you with the perfect labelling solution for your
+            application.
+          </p>
+          <p class="text-md text-justify text-slate-500 mb-3">
+            Experience efficiency, quality, and unmatched service with
+            EvolvX—your trusted partner for Industrial identification needs.
+          </p>
+        </div>
+        <div class="mt-5 text-md">
+          <div class="flex items-start mt-3 space-x-3 text-slate-500">
+            <Icon class="text-5xl name-hl" name="uil:map-marker" />
+            <p>
+              EvolvX Australia Pty Ltd
+              <br />
+              ACN: 681 705 831 <br />
+              278 / 18 - 20 Edinburgh Street Oakleigh South VIC 3167, Australia.
+            </p>
+          </div><div class="flex items-center mt-3 space-x-4 text-slate-500">
+            <Icon class="text-3xl name-hl" name="uil:envelope" />
+            <a href="mailto:sales@evolvx.com.au" class="hover:text-sky-600"
+              >sales@evolvx.com.au</a
+            >
+          </div><div class="flex items-center mt-3 space-x-4 text-slate-500">
+            <Icon class="text-3xl name-hl" name="uil:phone" />
+            <a href="tel:0468391010" class="hover:text-sky-600">0468391010</a>
           </div>
         </div>
-        <div class="md:col-6 md:order-1">
-          <form
-            class="lg:max-w-[484px]"
-            action={contact_form_action}
-            method="POST"
-          >
-            <div class="form-group mb-5">
-              <label class="form-label" for="name">Full Name</label>
-              <input
-                class="form-control"
-                type="text"
-                id="name"
-                placeholder="Your Full Name"
-              />
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="eamil">Email Adrdess</label>
-              <input
-                class="form-control"
-                type="text"
-                id="email"
-                placeholder="Your  Email Address"
-              />
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="reason">Reason/Purpose</label>
-              <select name="reason" id="reason" class="form-select" required>
-                <option value="">Select reason/purpose</option>
-                <option value="investment plane">Investment Plan</option>
-                <option value="investment plane-2">Investment Plan 2</option>
-                <option value="investment plane-3">Investment Plan 3</option>
-              </select>
-            </div>
-            <div class="form-group mb-5">
-              <label class="form-label" for="message">Message Here</label>
-              <textarea
-                class="form-control h-[150px]"
-                id="message"
-                cols="30"
-                rows="10"></textarea>
-            </div>
-            <input
-              class="btn btn-primary block w-full"
-              type="submit"
-              value="Send Message"
-            />
-          </form>
-        </div>
+      </div>
+      <div>
+        <Contactform />
       </div>
     </div>
-  </section>
-</Base>
+  </Container>
+</Layout>
